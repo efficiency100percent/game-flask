@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html>
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2R3SCM9');</script>
+<!-- End Google Tag Manager -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title> Shubham's Portfolio </title>
+	<link rel="icon" type="image/png" href="images/favicon/file.png">
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2R3SCM9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   <div class="container">  
+        <h1>BMI Calculator</h1>
+        <label>
+            <input id="h-input" type="number" placeholder="Enter Your Height in Centimeters: ">
+        </label>        
+        <label>
+            <input id="w-input" type="number" placeholder="Enter Your Weight in Kilograms: ">
+        </label>            
+        <button type="submit" onclick="calculateBMI()">Calculate BMI</button>
+            
+        <div class="bmi-value">
+            <h4>BMI Value: </h4>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="status">
+            <h4>Status: </h4>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<br>
+	<center><a href="/"><button>Main</button></a>
+	  <a href="/cert"><button>Licenses & Certification</button></a>
+		<a href="/edu"><button>Education</button></a>
+    <a href="/exp"><button>Experience</button></a>
+	<a href="/portfolio"><button>Portfolio</button></a></center>
+</body>
+
+</html>
